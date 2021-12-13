@@ -206,7 +206,7 @@ public class VendingMachine {
 		frame = new JFrame();
 		frame.setTitle("VENDING MACHINE");
 		frame.getContentPane().setBackground(Color.LIGHT_GRAY);
-		frame.setBounds(0, 0, 562, 784);
+		frame.setBounds(0, 0, 371, 781);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setResizable(false);
 		frame.getContentPane().setLayout(null);
@@ -864,121 +864,11 @@ public class VendingMachine {
 						btnCancel_1.setFont(new Font("Arial Black", Font.PLAIN, 15));
 						btnCancel_1.setBounds(14, 421, 152, 30);
 						selectPanel.add(btnCancel_1);
-		
-		JPanel delivPanel = new JPanel();
-		delivPanel.setBounds(-214, 652, 400, 100);
-		delivPanel.setBackground(Color.DARK_GRAY);
-		frame.getContentPane().add(delivPanel);
-					
-		URL arrImgURL = getClass().getResource("/image/orange_arrow.png");
-		delivPanel.setLayout(null);
-		
-		panel_10 = new JPanel();
-		panel_10.setBackground(Color.ORANGE);
-		panel_10.setBorder(new LineBorder(new Color(255, 200, 0), 2, true));
-		panel_10.setBounds(216, 28, 184, 46);
-		delivPanel.add(panel_10);
-		panel_10.setLayout(null);
-		
-		
-		lbCollect = new JLabel("Collect Item Here");
-		lbCollect.setBounds(10, 11, 164, 24);
-		panel_10.add(lbCollect);
-		lbCollect.setBackground(Color.DARK_GRAY);
-		lbCollect.setOpaque(true);
-		lbCollect.setForeground(Color.WHITE);
-		lbCollect.setHorizontalAlignment(SwingConstants.CENTER);
-		lbCollect.setFont(new Font("Arial Black", Font.BOLD | Font.ITALIC, 15));
-		
-		JPanel panel = new JPanel();
-		panel.setLayout(null);
-		panel.setBackground(Color.WHITE);
-		panel.setBounds(-2, 25, 191, 625);
-		frame.getContentPane().add(panel);
-		
-		JPanel panelCoca = new JPanel();
-		panelCoca.setLayout(null);
-		panelCoca.setBackground(Color.WHITE);
-		panelCoca.setBounds(41, 57, 110, 127);
-		panel.add(panelCoca);
-		
-		JLabel lblCoca = new JLabel("coca");
-		lblCoca.setIcon(new ImageIcon(VendingMachine.class.getResource("/image/coca-cola.jpg")));
-		lblCoca.setVerticalAlignment(SwingConstants.BOTTOM);
-		lblCoca.setHorizontalAlignment(SwingConstants.CENTER);
-		lblCoca.setBounds(10, 0, 100, 95);
-		panelCoca.add(lblCoca);
-		
-		JLabel lblCocaPrice = new JLabel("10.000 VND");
-		lblCocaPrice.setHorizontalAlignment(SwingConstants.CENTER);
-		lblCocaPrice.setBounds(0, 101, 110, 14);
-		panelCoca.add(lblCocaPrice);
-		
-		JPanel panelPepsi = new JPanel();
-		panelPepsi.setLayout(null);
-		panelPepsi.setBackground(Color.WHITE);
-		panelPepsi.setBounds(41, 280, 110, 127);
-		panel.add(panelPepsi);
-		
-		JLabel lblPepsi = new JLabel("pepsi");
-		lblPepsi.setIcon(new ImageIcon(VendingMachine.class.getResource("/image/pepsi.png")));
-		lblPepsi.setVerticalAlignment(SwingConstants.BOTTOM);
-		lblPepsi.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPepsi.setBounds(20, 0, 90, 91);
-		panelPepsi.add(lblPepsi);
-		
-		JLabel lblPepsiPrice = new JLabel("10.000 VND");
-		lblPepsiPrice.setHorizontalAlignment(SwingConstants.CENTER);
-		lblPepsiPrice.setBounds(0, 102, 110, 14);
-		panelPepsi.add(lblPepsiPrice);
-		
-		JPanel panelSoda = new JPanel();
-		panelSoda.setLayout(null);
-		panelSoda.setBackground(Color.WHITE);
-		panelSoda.setBounds(41, 478, 110, 126);
-		panel.add(panelSoda);
-		
-		JLabel lblSoda = new JLabel("soda");
-		lblSoda.setIcon(new ImageIcon(VendingMachine.class.getResource("/image/soda.jpg")));
-		lblSoda.setVerticalAlignment(SwingConstants.BOTTOM);
-		lblSoda.setHorizontalAlignment(SwingConstants.CENTER);
-		lblSoda.setBounds(20, 0, 90, 93);
-		panelSoda.add(lblSoda);
-		
-		JLabel lblSodaPrice = new JLabel("20.000 VND");
-		lblSodaPrice.setHorizontalAlignment(SwingConstants.CENTER);
-		lblSodaPrice.setBounds(0, 101, 110, 14);
-		panelSoda.add(lblSodaPrice);
-						
-						JPanel panel_7_1 = new JPanel();
-						panel_7_1.setBorder(new LineBorder(new Color(0, 0, 0), 3, true));
-						panel_7_1.setBackground(new Color(255, 153, 0));
-						panel_7_1.setBounds(-2, 0, 370, 24);
-						frame.getContentPane().add(panel_7_1);
-						panel_7_1.setLayout(null);
-						
-						btnPromtionMess = new JButton("Promotion today!!!");
-						btnPromtionMess.addActionListener(new ActionListener() {
-							public void actionPerformed(ActionEvent arg0) {
-							}
-						});
-						btnPromtionMess.setBounds(0, 0, 370, 21);
-						btnPromtionMess.setAlignmentY(Component.BOTTOM_ALIGNMENT);
-						btnPromtionMess.setRequestFocusEnabled(false);
-						btnPromtionMess.setOpaque(false);
-						btnPromtionMess.setMargin(new Insets(2, 0, 2, 0));
-						btnPromtionMess.setForeground(Color.RED);
-						btnPromtionMess.setFont(new Font("Arial Black", Font.BOLD | Font.ITALIC, 14));
-						btnPromtionMess.setFocusPainted(false);
-						btnPromtionMess.setContentAreaFilled(false);
-						btnPromtionMess.setBorderPainted(false);
-						btnPromtionMess.setBorder(null);
-						panel_7_1.add(btnPromtionMess);
 						
 						
 						payPanel = new JPanel();
-						payPanel.setBounds(378, 25, 180, 727);
-						frame.getContentPane().add(payPanel);
+						payPanel.setBounds(0, 0, 180, 727);
+						tapPanel.add(payPanel);
 						payPanel.setBackground(Color.DARK_GRAY);
 						payPanel.setLayout(null);
 						payPanel.setVisible(false);
@@ -1264,6 +1154,134 @@ public class VendingMachine {
 						btnGetChange.setIcon(new ImageIcon(VendingMachine.class.getResource("/image/receive-dollar.png")));
 						btnGetChange.setBackground(Color.LIGHT_GRAY);
 						btnGetChange.setVisible(false);
+		
+		JPanel delivPanel = new JPanel();
+		delivPanel.setBounds(-214, 652, 400, 100);
+		delivPanel.setBackground(Color.DARK_GRAY);
+		frame.getContentPane().add(delivPanel);
+					
+		URL arrImgURL = getClass().getResource("/image/orange_arrow.png");
+		delivPanel.setLayout(null);
+		
+		panel_10 = new JPanel();
+		panel_10.setBackground(Color.ORANGE);
+		panel_10.setBorder(new LineBorder(new Color(255, 200, 0), 2, true));
+		panel_10.setBounds(216, 28, 184, 46);
+		delivPanel.add(panel_10);
+		panel_10.setLayout(null);
+		
+		
+		lbCollect = new JLabel("Collect Item Here");
+		lbCollect.setBounds(10, 11, 164, 24);
+		panel_10.add(lbCollect);
+		lbCollect.setBackground(Color.DARK_GRAY);
+		lbCollect.setOpaque(true);
+		lbCollect.setForeground(Color.WHITE);
+		lbCollect.setHorizontalAlignment(SwingConstants.CENTER);
+		lbCollect.setFont(new Font("Arial Black", Font.BOLD | Font.ITALIC, 15));
+		
+		JPanel panel = new JPanel();
+		panel.setLayout(null);
+		panel.setBackground(Color.WHITE);
+		panel.setBounds(-2, 25, 191, 625);
+		frame.getContentPane().add(panel);
+		
+		JPanel panelCoca = new JPanel();
+		panelCoca.setLayout(null);
+		panelCoca.setBackground(Color.WHITE);
+		panelCoca.setBounds(41, 57, 110, 127);
+		panel.add(panelCoca);
+		
+		JLabel lblCoca = new JLabel("coca");
+		lblCoca.setIcon(new ImageIcon(VendingMachine.class.getResource("/image/coca-cola.jpg")));
+		lblCoca.setVerticalAlignment(SwingConstants.BOTTOM);
+		lblCoca.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCoca.setBounds(10, 0, 100, 95);
+		panelCoca.add(lblCoca);
+		
+		JLabel lblCocaPrice = new JLabel("10.000 VND");
+		lblCocaPrice.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCocaPrice.setBounds(0, 113, 110, 14);
+		panelCoca.add(lblCocaPrice);
+		
+		JLabel lblCocaPrice_1 = new JLabel("#001");
+		lblCocaPrice_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblCocaPrice_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCocaPrice_1.setBounds(0, 102, 110, 14);
+		panelCoca.add(lblCocaPrice_1);
+		
+		JPanel panelPepsi = new JPanel();
+		panelPepsi.setLayout(null);
+		panelPepsi.setBackground(Color.WHITE);
+		panelPepsi.setBounds(41, 280, 110, 127);
+		panel.add(panelPepsi);
+		
+		JLabel lblPepsi = new JLabel("pepsi");
+		lblPepsi.setIcon(new ImageIcon(VendingMachine.class.getResource("/image/pepsi.png")));
+		lblPepsi.setVerticalAlignment(SwingConstants.BOTTOM);
+		lblPepsi.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPepsi.setBounds(20, 0, 90, 91);
+		panelPepsi.add(lblPepsi);
+		
+		JLabel lblPepsiPrice = new JLabel("10.000 VND");
+		lblPepsiPrice.setHorizontalAlignment(SwingConstants.CENTER);
+		lblPepsiPrice.setBounds(0, 113, 110, 14);
+		panelPepsi.add(lblPepsiPrice);
+		
+		JLabel lblCocaPrice_1_1 = new JLabel("#002");
+		lblCocaPrice_1_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCocaPrice_1_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblCocaPrice_1_1.setBounds(0, 102, 110, 14);
+		panelPepsi.add(lblCocaPrice_1_1);
+		
+		JPanel panelSoda = new JPanel();
+		panelSoda.setLayout(null);
+		panelSoda.setBackground(Color.WHITE);
+		panelSoda.setBounds(41, 478, 110, 126);
+		panel.add(panelSoda);
+		
+		JLabel lblSoda = new JLabel("soda");
+		lblSoda.setIcon(new ImageIcon(VendingMachine.class.getResource("/image/soda.jpg")));
+		lblSoda.setVerticalAlignment(SwingConstants.BOTTOM);
+		lblSoda.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSoda.setBounds(20, 0, 90, 93);
+		panelSoda.add(lblSoda);
+		
+		JLabel lblSodaPrice = new JLabel("20.000 VND");
+		lblSodaPrice.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSodaPrice.setBounds(0, 112, 110, 14);
+		panelSoda.add(lblSodaPrice);
+		
+		JLabel lblCocaPrice_1_2 = new JLabel("#003");
+		lblCocaPrice_1_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblCocaPrice_1_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblCocaPrice_1_2.setBounds(0, 101, 110, 14);
+		panelSoda.add(lblCocaPrice_1_2);
+						
+						JPanel panel_7_1 = new JPanel();
+						panel_7_1.setBorder(new LineBorder(new Color(0, 0, 0), 3, true));
+						panel_7_1.setBackground(new Color(255, 153, 0));
+						panel_7_1.setBounds(-2, 0, 370, 24);
+						frame.getContentPane().add(panel_7_1);
+						panel_7_1.setLayout(null);
+						
+						btnPromtionMess = new JButton("Promotion today!!!");
+						btnPromtionMess.addActionListener(new ActionListener() {
+							public void actionPerformed(ActionEvent arg0) {
+							}
+						});
+						btnPromtionMess.setBounds(0, 0, 370, 21);
+						btnPromtionMess.setAlignmentY(Component.BOTTOM_ALIGNMENT);
+						btnPromtionMess.setRequestFocusEnabled(false);
+						btnPromtionMess.setOpaque(false);
+						btnPromtionMess.setMargin(new Insets(2, 0, 2, 0));
+						btnPromtionMess.setForeground(Color.RED);
+						btnPromtionMess.setFont(new Font("Arial Black", Font.BOLD | Font.ITALIC, 14));
+						btnPromtionMess.setFocusPainted(false);
+						btnPromtionMess.setContentAreaFilled(false);
+						btnPromtionMess.setBorderPainted(false);
+						btnPromtionMess.setBorder(null);
+						panel_7_1.add(btnPromtionMess);
 	}
 	// declare component
 	private JFrame frame;

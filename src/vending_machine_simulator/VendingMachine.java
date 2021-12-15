@@ -40,6 +40,7 @@ import java.awt.FlowLayout;
 import javax.swing.border.TitledBorder;
 
 import entity.InfoPromotion;
+import entity.Item;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;

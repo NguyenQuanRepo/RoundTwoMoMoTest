@@ -1,4 +1,4 @@
-package vending_machine_simulator;
+package entity;
 
 public class Item {
 	private String name;
